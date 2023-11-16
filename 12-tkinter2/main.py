@@ -30,13 +30,12 @@ stvrtina = d // 4
 
 #canvas.create_rectangle(x,  y+d // 2, x+d, y+(d // 2)+d)
 #canvas.create_polygon(x + d // 2, y, x+d, x+d, y+(d // 2)+d, x + d // 2, y)
-canvas.create_rectangle(x,  y+d // 2, x+d, y+(d // 2)+d, fill="orange")
-canvas.create_polygon(x, y+d//2, x+2*stvrtina, y, x+d, y+d//2, outline="black", fill="red")
-canvas.create_rectangle(x+stvrtina, y+d // 2+stvrtina, x+3*stvrtina, y+d // 2+3*stvrtina, fill="light blue")
+canvas.create_rectangle(x,  y+d // 2, x+d, y+(d // 2)+d)
+canvas.create_polygon(x, y+d//2, x+2*stvrtina, y, x+d, y+d//2, outline="black", fill="#f0f0ed")
+canvas.create_rectangle(x+stvrtina, y+d // 2+stvrtina, x+3*stvrtina, y+d // 2+3*stvrtina)
 #canvas.create_line(x+stvrtina, y+d // 2+2*stvrtina, x+3*stvrtina,y+d // 2+2*stvrtina)
 #canvas.create_line()
 canvas.create_line(x+stvrtina, y+d // 2+2*stvrtina, x+3*stvrtina,y+d // 2+2*stvrtina)
 canvas.create_line(x+2*stvrtina, y+d // 2+stvrtina, x+2*stvrtina, y+d // 2+3*stvrtina)
-
 
 canvas.mainloop()
