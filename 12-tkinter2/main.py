@@ -17,7 +17,7 @@ for j in range(498 // d):
         canvas.create_line(x, y, x+d, y+d)
         canvas.create_line(x, y+d, x+d, y)
         x = x + d  #nakresli stvorcek vedla dalsieho stvorceka
-    y = y + d
+    y = y + d   #nakresli stvorcek pod stvorcekom
     x = xx
 
 canvas.mainloop()
