@@ -25,6 +25,4 @@ for j in range(498 // d):
     y = y+3*d//2
     x = xx
 
-
-
 canvas.mainloop()
