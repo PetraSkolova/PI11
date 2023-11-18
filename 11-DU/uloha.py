@@ -13,7 +13,7 @@ canvas.create_rectangle(x, y+2*d, x+d, y+3*d)
 canvas.create_rectangle(x, y+3*d, x+d, y+4*d)
 canvas.create_rectangle(x, y+4*d, x+d, y+5*d)
 canvas.create_rectangle(x, y+5*d, x+d, y+6*d)
-canvas.create_rectangle(x, y+6*d, x+d, x+7*d)
+canvas.create_rectangle(x, y+6*d, x+d, y+7*d)
 
 canvas.create_rectangle(x+d, y, x+2*d, y+d)
 canvas.create_rectangle(x+2*d, y, x+3*d, y+d)
