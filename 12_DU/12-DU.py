@@ -1,23 +1,29 @@
-import tkinter
-
-canvas = tkinter.Canvas(width=600, height=500)
-canvas.pack()
+import tkinter as tk
 
 x = 5
 y = 5
 d = 10
-xx = x
-pocet = 598 // d    # // je celociselne delenie 7 // 3 = 2
-for j in range(498 // d):
-    for i in range(pocet):
+width = 630
+height = 250
+
+count = (width - x) // (29 * d)
+count2 = (height - y) // (7 * d)
+
+canvas = tk.Canvas(width=width, height=height)
+canvas.pack()
+
+print(count, count2)
+
+for j in range(count2):
+    for i in range(count):
         # pismeno P
-        canvas.create_rectangle(x, y, x + d, y + d)
+        canvas.create_rectangle(x, y, x + d, y + d, fill="purple")
         canvas.create_rectangle(x, y + d, x + d, y + 2 * d, fill="purple")
         canvas.create_rectangle(x, y + 2 * d, x + d, y + 3 * d, fill="purple")
         canvas.create_rectangle(x, y + 3 * d, x + d, y + 4 * d, fill="purple")
         canvas.create_rectangle(x, y + 4 * d, x + d, y + 5 * d, fill="purple")
         canvas.create_rectangle(x, y + 5 * d, x + d, y + 6 * d, fill="purple")
-        canvas.create_rectangle(x, y + 6 * d, x + d, x + 7 * d, fill="purple")
+        canvas.create_rectangle(x, y + 6 * d, x + d, y + 7 * d, fill="purple")
 
         canvas.create_rectangle(x + d, y, x + 2 * d, y + d, fill="purple")
         canvas.create_rectangle(x + 2 * d, y, x + 3 * d, y + d, fill="purple")
@@ -109,7 +115,7 @@ for j in range(498 // d):
         canvas.create_rectangle(x + 25 * d, y + 3 * d, x + 26 * d, y + 4 * d, fill="orange")
         canvas.create_rectangle(x + 26 * d, y + 3 * d, x + 27 * d, y + 4 * d, fill="orange")
         canvas.create_rectangle(x + 27 * d, y + 3 * d, x + 28 * d, y + 4 * d, fill="orange")
-        x = x + d
-    y = y + d
-    x = xx
+        x = x + 30 * d
+    x = x - 30 * d * count
+    y = y + 8 * d
 canvas.mainloop()
