@@ -22,7 +22,7 @@ for j in range(498 // d):
         canvas.create_line(x+stvrtina, y+d // 2+2*stvrtina, x+3*stvrtina,y+d // 2+2*stvrtina)
         canvas.create_line(x+2*stvrtina, y+d // 2+stvrtina, x+2*stvrtina, y+d // 2+3*stvrtina)
         x = x + d
-    y = y+3*d//2
+    y = y+float(3.55)*d//2
     x = xx
 
 canvas.mainloop()
