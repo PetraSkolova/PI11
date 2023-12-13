@@ -17,7 +17,7 @@ print(santa2_x)
 canvas = tkinter.Canvas(height=height, width=width)
 canvas.pack()
 
-image_santa = tkinter.PhotoImage(file="santa.png")
+image_santa = tkinter.PhotoImage(file="santa.png.png")
 santa = canvas.create_image(santa_x, santa_y, image=image_santa)
 santa2 = canvas.create_image(santa2_x, santa2_y, image=image_santa)
 santa3 = canvas.create_image(santa3_x, santa3_y, image=image_santa)
