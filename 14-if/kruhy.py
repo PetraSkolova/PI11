@@ -1,7 +1,7 @@
 import tkinter
 
-canvas_width = 300
-canvas_height = 300
+#canvas_width = 300
+#canvas_height = 300
 pocet = 100
 polomer = 30
 
