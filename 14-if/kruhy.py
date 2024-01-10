@@ -13,7 +13,7 @@ polomer = 30
 #       x = j*20 + 10
 #        y = i*20 + 15
 #        if i == 5:
-#            farba = 'white'
+#            farba = 'red'
 #        else:
 #            farba = 'white'
 #        canvas.create_oval(x - 8, y - 8, x + 8, y + 8, fill=farba)
