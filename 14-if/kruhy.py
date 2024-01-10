@@ -2,8 +2,6 @@ import tkinter
 
 #canvas_width = 300
 #canvas_height = 300
-pocet = 100
-polomer = 30
 
 #canvas = tkinter.Canvas()
 #canvas.pack()
@@ -22,7 +20,8 @@ polomer = 30
 
 canvas_width = 600
 canvas_height = canvas_width
-polomer = canvas_width // (polomer * 2)
+polomer = 20
+pocet = canvas_width // (polomer * 2)
 canvas = tkinter.Canvas(bg="white", width=canvas_width, height=canvas_width)
 canvas.pack()
 
@@ -34,5 +33,5 @@ for i in range(pocet):   #riadky
            farba = "red"
        else:
            farba = "white"
-       canvas.create_oval(x - polomer, y - polomer, x + polomer, y + polomer)
+       canvas.create_oval(x - polomer, y - polomer, x + polomer, y + polomer, fill=farba)
 tkinter.mainloop()
