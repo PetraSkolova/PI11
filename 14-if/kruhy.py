@@ -22,6 +22,7 @@ canvas_width = 600
 canvas_height = canvas_width
 polomer = 20
 pocet = canvas_width // (polomer * 2)
+
 canvas = tkinter.Canvas(bg="white", width=canvas_width, height=canvas_width)
 canvas.pack()
 
