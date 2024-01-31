@@ -8,14 +8,14 @@ def kruh(x, y, r, color):
 def kruhy_riadok(x,y,pocet,r,color):
     for i in range(pocet):
         kruh(x,y,r,color)
-        x = x+2*r
+        x = x + 2 * r
 
 
-def kruhy_stvorec(x,y,pocet,hlbka,r,color):
-    for j in range(hlbka):
+def kruhy_stvorec(x,y,pocet,r,color):
+    for j in range(pocet):
         kruhy_riadok(x,y,pocet,r,color)
-        y = y + 2*r
+        y = y + 2 * r
 
-kruhy_stvorec(50,50,5,5,30,'red')
+kruhy_stvorec(50,50,10, 10,'red')
 
 canvas.mainloop()
