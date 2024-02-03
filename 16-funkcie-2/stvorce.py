@@ -13,7 +13,6 @@ def stvorce(x, y, pocet, dlzka, r=255, g=255, b=255):
         for i in range(pocet):
             krok = 255 // pocet
             canvas.create_rectangle(x - pocet, y + dlzka, x + dlzka - pocet, y + dlzka * 2, fill=rgb(r, g, b))
-
             for i in range(pocet):
                 krok = 255 // pocet
                 canvas.create_rectangle(x - pocet, y + dlzka * 2, x + dlzka - pocet, y + dlzka * 3,fill=rgb(r, g, b))
