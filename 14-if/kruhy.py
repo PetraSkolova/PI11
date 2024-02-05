@@ -30,7 +30,7 @@ for i in range(pocet):   #riadky
    for j in range(pocet):  #stlpce
        x = j * polomer * 2 + polomer
        y = i * polomer * 2 + polomer
-       if j == pocet // 2:
+       if j == pocet // 2:              #j == i or j == pocet - i - 1: nakresli krizik
            farba = "red"
        else:
            farba = "white"
